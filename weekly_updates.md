@@ -67,7 +67,10 @@ The report should be sent via email to Adar (who will respond with feedback) and
 **Questions/Concerns:**
 
 - On documents should I use the full original name of the project: 'Robotic Hand Control using EEGs/EMGs' or am I free to instead use an adjusted name: 'Robotic Hand Control using EEG'?
-- Am I required to fill in an ethics form for this project? I do have a human subject (myself) 
+- Am I required to fill in an ethics form for this project? I do have a human subject (myself)
+- On the PPR I was given feedback that I was notably missing a timetable/Gantt chart however in the brief for the assessment it explicitly said not to include a detailed project plan such as a Gantt Chart as it is a requirement for the initial report.
+  - Did this discrepancy have an effect on my marks for this?
+
 
 
 
