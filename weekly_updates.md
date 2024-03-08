@@ -45,7 +45,7 @@ The report should be sent via email to Adar (who will respond with feedback) and
 - Should I be setting up weekly meetings with Jihong?
   - Is there guidance for the contents of these meetings?
 - I realise the LIVE lab is usually locked - who should I ask if I want to access the lab? 
-- Are there rules pertaining to linking a Git repository to Github
+- Are there rules pertaining to linking a Git repository to GitHub
   - Is this allowed at all
   - If allowed, does it for example have to be set to private or can it be public?
 
@@ -54,17 +54,35 @@ The report should be sent via email to Adar (who will respond with feedback) and
 
 **Supervision Meetings:**
 
+- Meeting with Jihong 29/02
+  - Discussed many of the points bought up in this weekly update
+
 **Progress on Actions:**
 
 - Installed Ubuntu 20.04.6 LTS and ROS1 on laptop*
+- Created Git repository
+  - Available on Github @ https://github.com/smithjjoseph/EEG-robotic-hand/tree/master
 
-**Other Progress:**
+- Created a VEP type test stimulus (available via GitHub)
+  - An alternating chequered pattern for testing visual-neural pathways
+  - Created using SVG so should be usable on any web browser
+- Progress made on initial report
 
 **Objectives for Next Update:**
 
-**Comments:**
+- Meet with Jack to learn how to collect some data from the EEG
+- Create more test videos for EEG testing
+  - Video with instruction to do action with hand
+- Meet with Jihong at ISA to test laptop ROS setup
+- Finish initial report
+
+Comments:
+
+- These weekly updates are also available via the Git repository
 
 **Questions/Concerns:**
+
+I have already asked Jihong the following however we decided second opinions would be useful for the first 2 questions
 
 - On documents should I use the full original name of the project: 'Robotic Hand Control using EEGs/EMGs' or am I free to instead use an adjusted name: 'Robotic Hand Control using EEG'?
 - Am I required to fill in an ethics form for this project? I do have a human subject (myself)
