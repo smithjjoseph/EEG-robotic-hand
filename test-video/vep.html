@@ -12,39 +12,42 @@
 <!-- This will only work on displays with a 16:9 aspect ratio -->
 <svg width="100%" height="100%" version="1.1" viewBox="0 -12 1920 1080" style="display: block;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
+        <!-- Checkered pattern made up of 4 squares -->
         <pattern id="pattern-checkers" x="0" y="0" width="192" height="192" patternUnits="userSpaceOnUse">
-            <rect class="checker" x="0" width="96" height="96" y="0"></rect>
-            <rect class="checker" x="96" width="96" height="96" y="96"></rect>
+            <rect class="checker1" x="0" y="0" width="96" height="96"></rect>
+            <rect class="checker2" x="96" y="0" width="96" height="96" fill="white"></rect>
+            <rect class="checker2" x="0" y="96" width="96" height="96" fill="white"></rect>
+            <rect class="checker1" x="96" y="96" width="96" height="96"></rect>
         </pattern>
     </defs>
 
+    <!-- Top and bottom bar to fill in gap -->
     <rect x="0" y="-12" width="100%" height="12" fill="grey"></rect>
     <rect x="0" y="1056" width="100%" height="12" fill="grey"></rect>
+    <!-- Implement checkered pattern -->
     <rect x="0" y="0" width="100%" height="1056" fill="url(#pattern-checkers)"></rect>
+    <!-- Circle for focussing on -->
     <circle cx="50%" cy="49%" r="1%" fill="red" />
 </svg>
 </div>
 
 <script>
-    const interval_s = 1.5;
+    const INTERVAL_S = 1.5;
+    const BLACK = "rgb(0, 0, 0)";
+    const WHITE = "rgb(255, 255, 255)";
 
-    let body = $("body");
-    let checker = $(".checker");
+    let checker1 = $(".checker1");
+    let checker2 = $(".checker2");
 
-    function flip() {
-        let black = "rgb(0, 0, 0)";
-        let white = "rgb(255, 255, 255)";
-
-        var current_bg = body.css("background");
-        var current_checker = checker.css("fill");
-
-        body.css("background", (current_bg == black)? white : black);
-        var next_colour = (current_checker == black)? "white" : "black";
-        checker.attr("style", "fill:" + next_colour);
+    function flip_checkers() {
+        var next_colour = (checker1.css("fill") == BLACK)? "white" : "black";
+        checker1.attr("style", "fill:" + next_colour);
+        var next_colour = (checker2.css("fill") == BLACK)? "white" : "black";
+        checker2.attr("style", "fill:" + next_colour);
     }
 
     $(document).ready(function() {
-        setInterval(flip, interval_s * 1000);
+        setInterval(flip_checkers, INTERVAL_S * 1000);
     });
 </script>
 </body>
