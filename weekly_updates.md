@@ -98,6 +98,37 @@ I have already asked Jihong the following however we decided second opinions wou
 
 **Supervision Meetings:**
 
+- Met with Jihong on 08/03
+  - Tested simple ROS implementation on laptop
+
+**Progress on Actions:**
+
+- Created test video specific to hand movement
+  - Uses shapes that are associated with actions relating to hand movement
+  - Based on https://www.frontiersin.org/articles/10.3389/fnhum.2022.901285/full
+- I had previously asked Jack to tell me when he was next able to show me the EEG system setup in the LIVE lab however I have not heard back from him since
+  - I will reprompt him via email to tell me when he will next be in the lab just in case he forgot
+- ROS is working on my laptop and we were able to get the simple opening and closing of the hand to work
+- Initial report finished
+
+**Other Progress:**
+
+- Added central dot to VEP-like test video
+  - I found that my eyes would wonder if I didn't put something specific to look at in the middle of the screen
+
+**Objectives for Next Update:**
+
+- Hopefully visit the LIVE lab and have Jack show me the EEG system
+- Research ROS implementation and attempt to create incremental movement program for softhand
+
+**Questions/Concerns:**
+
+- No questions
+
+# 15th March
+
+**Supervision Meetings:**
+
 **Progress on Actions:**
 
 **Other Progress:**
@@ -107,4 +138,3 @@ I have already asked Jihong the following however we decided second opinions wou
 **Comments:**
 
 **Questions/Concerns:**
-
