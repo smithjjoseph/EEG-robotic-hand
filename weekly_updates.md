@@ -105,7 +105,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - Created test video specific to hand movement
   - Uses shapes that are associated with actions relating to hand movement
-  - Based on https://www.frontiersin.org/articles/10.3389/fnhum.2022.901285/full
+  - Lightly based on https://www.frontiersin.org/articles/10.3389/fnhum.2022.901285/full
 - I had previously asked Jack to tell me when he was next able to show me the EEG system setup in the LIVE lab however I have not heard back from him since
   - I will reprompt him via email to tell me when he will next be in the lab just in case he forgot
 - ROS is working on my laptop and we were able to get the simple opening and closing of the hand to work
@@ -126,6 +126,26 @@ I have already asked Jihong the following however we decided second opinions wou
 - No questions
 
 # 15th March
+
+**Supervision Meetings:**
+
+- No supervision meeting with Jihong this week since Jihong is doing a talk and we couldn't find another time
+
+**Progress on Actions:**
+
+- Re-emailed Jack and now have session planned for Monday so he can show me how to use the EEG headset
+- Didn't get a chance to work on the script for the incremental movement of the softhand - will continue this work for next week
+
+**Objectives for Next Update:**
+
+- Visit the LIVE lab on Monday and have Jack show me the EEG system
+- Attempt implementation of incremental movement program for softhand
+
+**Comments**
+
+- Haven't had the chance to do as much work as I would've liked this week - I hope to get a lot more done next week
+
+# 22nd March
 
 **Supervision Meetings:**
 
