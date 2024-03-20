@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <title>Hand Movement Test Video</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="hand.js"></script>
 </head>
 
 <body>
 <div>
 <!-- This will only work on displays with a 16:9 aspect ratio -->
-<svg width="100%" height="100%" version="1.1" viewBox="0 -12 1920 1080" style="display: block;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <rect x="0" y="-12" width="100%" height="12" fill="grey"></rect>
-    <rect x="0" y="1056" width="100%" height="12" fill="grey"></rect>
-    <circle cx="50%" cy="49%" r="1%" fill="red" />
+<svg width="100%" height="100%" version="1.1" viewBox="0 0 1920 1080" style="display: block;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="gray" stroke-dasharray="4"></line>
+    <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="gray" stroke-dasharray="4"></line>
+
+    <rect id="outer-square" x="860" y="440" width="200" height="200" fill="white" fill-opacity="1" stroke="#00377a" stroke-width="2.5" visibility="hidden"></rect>
+    <rect id="square" x="920" y="500" width="80" height="80" fill="#0073ff" fill-opacity="0" stroke="#0073ff" stroke-width="1.5" stroke-opacity="1"></rect>
+    <circle id="outer-circle" cx="50%" cy="50%" r=100 fill="white" fill-opacity="1" stroke="#801500" stroke-width="2.5" visibility="hidden" />
+    <circle id="circle" cx="50%" cy="50%" r="40" fill="#ff2a00" fill-opacity="0" stroke="#ff2a00" stroke-width="1.5" stroke-opacity="1" />
 </svg>
 </div>
 </body>
