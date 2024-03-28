@@ -10,7 +10,8 @@ from trajectory_msgs.msg import JointTrajectoryPoint
 
 def close():
     pub = rospy.Publisher('/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/command', JointTrajectory, queue_size=10)
-    rospy.init_node('demo', anonymous=True)
+    # Creates a node called 'close_hand' to run process on
+    rospy.init_node('close_hand')
     rate = rospy.Rate(5)
     for step in np.linspace(0, 3.142, 5):
         cmd = JointTrajectory()
@@ -32,7 +33,8 @@ def close():
 
 def open():
     pub = rospy.Publisher('/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/command', JointTrajectory, queue_size=10)
-    rospy.init_node('demo', anonymous=True)
+    # Creates a node called 'open_hand' to run process on
+    rospy.init_node('open_hand')
     rate = rospy.Rate(5)
     for step in np.linspace(-3.142, 0, 5):
         cmd = JointTrajectory()
