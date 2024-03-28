@@ -149,12 +149,55 @@ I have already asked Jihong the following however we decided second opinions wou
 
 **Supervision Meetings:**
 
+- Meeting over Zoom with Jihong on 21/03
+
+  - Showed and explained to him my video-tests
+
+  - Discussed potential issues with operating the EEG Cap
+
+    - Physical hardware is temperamental 
+
+    - Possibly don't have the software (for Linux drivers)
+    - Decided that if we can't get the EEG cap working I will instead base hand movement off computer vision (likely if EEG cap not sorted over next 2 weeks)
+
+  - Discussed demonstration day logistics 
+    - Need to notify department of location for the day
+    - softhand can be dismounted and transported to West campus on demo day
+
+**Progress on Actions:**
+
+- Visited LIVE lab with Jack so he could show me how to use the system
+  - We could not seem to get the EEG cap working when we met at the lab - there seemed to possibly be an issue where we didn't have the correct software
+  - Ellie has since sent the drivers and software required however it is only for Windows and I only have a Linux laptop
+    - Could run a VM but this would not allow for serial making this solution infeasable
+  - I have asked Jack if there are any Linux drivers for the EEG system but I have not yet had a response so I will likely email Ellie as well
+- Annotated simple hand open and close script
+
+**Other Progress:**
+
+- Installed OpenViBE on my laptop for experimentation purposes
+  - Depending on the output of the EEG system this may or may not be the best way to pre-process information
+  - Seems MNE-python can handle raw information so this may instead be better
+
+**Objectives for Next Update:**
+
+- Attempt to meet up with Jack (if he is available over the holidays) and obtain some data from the EEG cap
+- Attempt implementation of incremental movement program for softhand
+
+**Questions/Concerns:**
+
+- Do we have to send project updates over the Easter break?
+
+# Next Meeting
+
+**Supervision Meetings:
+
 **Progress on Actions:**
 
 **Other Progress:**
 
 **Objectives for Next Update:**
 
-**Comments:**
+**Comments**
 
 **Questions/Concerns:**
