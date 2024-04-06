@@ -12,3 +12,9 @@ Associates shape/colour with a motor action in this case the opening and closing
 - The enclosing outer shape indicates the time to the next motion
 - When the blue square is filled the chosen hand should be opened
 - When the red circle is filled the chosen hand should be closed
+
+**finger:**
+Associates a displayed number with extending a finger on a chosen hand in a specified sequence
+- The chosen hand laid on a flat surface and should start open palm facing upwards
+- The red text ready indicates that the number is about to change
+- The fingers should be extended in the order of smallest finger to thumb
