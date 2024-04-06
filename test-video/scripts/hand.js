@@ -4,8 +4,9 @@ const OPACITY_CHANGE = 0.01;
 const OUTER_LEN_CHANGE = 0.5;
 const OUTER_RESET_SIZE = 40;
 
-var frames_per_ms = 1000/FRAMES_PER_SEC;
+var frames_per_ms = 1000 / FRAMES_PER_SEC;
 var target_delay_frames = TARGET_DELAY_SEC * FRAMES_PER_SEC;
+
 var time_counter = 0;
 var stage = 0;
 
@@ -13,7 +14,7 @@ var stage = 0;
 function wait(delay_frames) {
     if (time_counter >= delay_frames) {
         time_counter = 0;
-        stage += 1
+        stage += 1;
     } else time_counter += 1;
 }
 
@@ -110,7 +111,7 @@ $(document).ready(function() {
                 empty(square);
                 hide(square);
                 hide(outer_square);
-                show(circle)
+                show(circle);
                 reset_OC();
                 break;
             case 4:
