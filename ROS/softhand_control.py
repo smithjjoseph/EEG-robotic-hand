@@ -6,6 +6,7 @@
 :brief: Contains command line functions for opening and closing a qb softhand 2
 
 :TODO::
+- Use `rosparam list [opt: namespace]` to get list of parameters 
 - Consolidate magic values to more useful constants
   - Test with provided GUI and then use values in script
 - Find out what JointTrajectoryPoint().time_from_start does
