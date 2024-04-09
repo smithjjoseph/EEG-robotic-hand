@@ -5,8 +5,22 @@
 2. Information on general [Joint Trajectory Action](http://wiki.ros.org/pr2_controllers/Tutorials/Moving%20the%20arm%20using%20the%20Joint%20Trajectory%20Action)
 3. Information on qbhand [Waypoint Control](https://wiki.ros.org/qb_hand_control/Tutorials/Waypoint%20Control)
 
-### Nomenclature/About
+### ROS Setup
+Within .bashrc a script is called and some env vars are setup for use with ROS
+- `setup.bash`: Initialises catkin (low-level build system/infrastructure for ROS)
+- `ROS_MASTER_URI`: Required so nodes know where the master is
+    - Should be set to XML-RPC URI of master
+    - `=http://172.16.0.1:11311`
+- `ROS_HOSTNAME`/`ROS_IP`: Set the declared network address of a node
+    - Mutually exclusive - hostname takes precedence over IP 
+    - Use `ROS_IP` for IPs and `ROS_HOSTNAME` for host names
+    - `=172.16.0.5`
 
+### Command Line Tools
+- `rostopic`: Interacts with ROS topics (publishers, subscribers, publishing rates and ROS messages)
+- `rosparam`: Interacts with ROS parameters
+
+### Nomenclature/About
 High-level Script → Action Interface → Controller → Robot Joints
 
 - **High-level Script:** Uses action interface to provide desired joint trajectories
