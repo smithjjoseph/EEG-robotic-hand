@@ -188,9 +188,68 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - Do we have to send project updates over the Easter break?
 
-# Next Meeting
+# 12th April
 
-**Supervision Meetings:
+**Supervision Meetings:**
+
+- Met with Jihong on 12/04 at ISA
+  - Better understanding of provided script and sending messages to ROS server
+  - Wasn't able to test on the softhand robot as there was something wrong with it
+
+**Progress on Actions:**
+
+- Created a program for more incremental movement control of the softhand
+- I have sent Jack a couple of emails regarding the EEG system (20/03 & 09/04) and haven't heard from him
+  - Maybe I should instead email Ellie and maybe she can show me how to use the system
+  - If it is not possible to use EEG signals to drive the hand, Jihong has suggested instead using computer vision to drive the hand instead of EEG signals
+
+
+**Other Progress:**
+
+- Ordered and received USB to ethernet dongle for connecting to softhand
+- I have emailed the department to switch room to the LIVE lab for the demonstration day
+
+**Objectives for Next Update:**
+
+- Go to ISA to test new movement script on softhand
+- Email Ellie to see I can arrange with her a time to show me how to use the EEG system
+
+# 19th April
+
+**Supervision Meetings:**
+
+- Met with Jihong on 19/04 at ISA
+  - Was able to test implementation linking a hand identification computer vision model with the softhand
+  - Tested the movement of the other motor as well as a method for receiving joint positions that was found to not work
+
+**Progress on Actions:**
+
+- Met with Jack on 17/04 at the LIVE lab
+  - Managed to get software working for the EEG cap
+  - Unfortunately we weren't able to get a low enough impedance for any of the electrodes to be able to pick up anything but noise
+  - There was also a moment where the cap somehow seemed to get charged, giving Jack a loud shock
+  - Not sure if the lack of connection and electric shock were due to user error or whether the system is faulty
+
+**Objectives for Next Update:**
+
+- Add debouncer to script
+  - Look up dealing with quick changing signals in software
+- Finish hand vision control demo
+  - Convert script from counting fingers to making a calculation for openness percentage
+- Maybe facial movement recognition control also for demo
+  - If there is enough time, start work on a script for using mood to control hand openness
+
+**Comments:**
+
+- If the EEG system isn't working safely within the next week or another EEG system in another department isn't available it might be necessary to pivot the project to the vision approach fully
+
+**Questions:**
+
+- I've checked the demonstration day table and I've noticed Jack is not in the LIVE lab for his demonstration. Has he mentioned about doing his demonstration elsewhere?
+
+# 26th April
+
+**Supervision Meetings:**
 
 **Progress on Actions:**
 
@@ -198,6 +257,6 @@ I have already asked Jihong the following however we decided second opinions wou
 
 **Objectives for Next Update:**
 
-**Comments**
+**Comments:**
 
 **Questions/Concerns:**
