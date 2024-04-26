@@ -251,6 +251,34 @@ I have already asked Jihong the following however we decided second opinions wou
 
 **Supervision Meetings:**
 
+- No meeting with Jihong this week (occupied Friday)
+- Met with John Bateman to film some footage for the demonstration day
+  - Due to the fact that it is not feasible to take softhand to the demonstration
+
+**Progress on Actions:**
+
+- Finished hand vision control demo
+  - This is the script that was videoed for the demonstration
+  - After testing the script it didn't appear that any sort of software debouncer was needed
+
+**Other Progress:**
+
+- Refactored codebase and made sure all project files were uploaded to the repository on GitHub
+
+**Objectives for Next Update:**
+
+- Facial movement recognition control
+  - Will either use a classification model for emotion detection to open/close hand based on mood
+  - Or will have a control scheme based on simple facial movements (i.e. opening/closing eyes & mouth) to open/close hand
+
+**Comments:**
+
+- I noticed Jack has managed to source a new EEG cap so I await further communications from him so I can potentially collect some data
+
+# 3rd May
+
+**Supervision Meetings:**
+
 **Progress on Actions:**
 
 **Other Progress:**
