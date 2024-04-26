@@ -18,6 +18,26 @@ Within .bashrc a script is called and some env vars are setup for use with ROS
 
 ### Command Line Tools
 - `rostopic`: Interacts with ROS topics (publishers, subscribers, publishing rates and ROS messages)
+    - `rostopic list` returns:
+        - `/qbhand2m1/control/joint_states`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/command`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/follow_joint_trajectory/cancel`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/follow_joint_trajectory/feedback`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/follow_joint_trajectory/goal`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/follow_joint_trajectory/result`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/follow_joint_trajectory/status`
+        - `/qbhand2m1/control/qbhand2m1_motor_positions_trajectory_controller/state`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/command`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/follow_joint_trajectory/cancel`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/follow_joint_trajectory/feedback`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/follow_joint_trajectory/goal`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/follow_joint_trajectory/result`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/follow_joint_trajectory/status`
+        - `/qbhand2m1/control/qbhand2m1_synergies_trajectory_controller/state`
+        - `/qbhand2m1/control/startup_sync`
+        - `/qbhand2m1/frequency`
+        - `/qbhand2m1/joint_states`
+        - `/qbhand2m1/qbhand2m1/state`
 - `rosparam`: Interacts with ROS parameters
 
 ### Nomenclature/About
