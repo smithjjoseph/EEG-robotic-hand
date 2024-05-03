@@ -279,6 +279,34 @@ I have already asked Jihong the following however we decided second opinions wou
 
 **Supervision Meetings:**
 
+- No supervision meeting with Jihong this week
+- Had a Zoom meeting with Adar on 29/04 and discussed my progress
+
+**Progress on Actions:**
+
+- Generated a dataset for happy, sad and neutral facial expressions using stable diffusion
+- Started looking a training a classification model for identifying facial expression
+  - Hopefully this will get finished before starting the collection of EEG data
+
+**Other Progress:**
+
+- Had a closer look at some of the processes necessary to analyse/classify EEG data in MNE-Python
+
+**Objectives for Next Update:**
+
+- Collect EEG data
+  - Will attend the LIVE lab on Monday with Jack to collect some data
+- Analyse EEG data
+- Start writing report
+
+**Questions/Concerns:**
+
+- Does the university/department have a stance on using generative AI to produce a dataset for training a classification model?
+
+# 10th May
+
+**Supervision Meetings:**
+
 **Progress on Actions:**
 
 **Other Progress:**
