@@ -3,6 +3,7 @@
 :file: complex_control.py
 :brief: Contains functions for movement control of a qb softhand 2
 :author: Joseph Smith
+:TODO: Duration parameter
 """
 
 import rospy
@@ -10,10 +11,13 @@ from numbers import Real
 from trajectory_msgs.msg import JointTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
 
+# Represents the percentage change for an incremental movement
+DELTA_POS = 4
+
 
 class HandControl:
     def __init__(self) -> None:
-        self.synergy_joint_pos: float = 0.0
+        self.synergy_joint_pos: int = 0 # Value between 0 and 100
         # self.reset()
 
         self.pub = rospy.Publisher(
@@ -43,11 +47,9 @@ class HandControl:
         :type open: bool
         :returns: None
         """
-        # Won't have to implement this if the joint state feature works
         raise NotImplemented()
 
 
-    # TODO:: Add duration parameter to this function
     def movement(self, percent_closed: Real) -> None:
         """Makes a movement based on how closed the hand should be
 
@@ -74,6 +76,20 @@ class HandControl:
         self.rate.sleep()
 
         self.synergy_joint_pos = float_closed
+
+    
+    def increment(self, towards_close: bool) -> None:
+        """Increments the position of the synergy joint in the hand either
+        towards or away from the closed position
+
+        :param towards_close: True if hand should move towards the closed position
+        \t False if the hand should move towards the opened position
+        :type towards_close: bool
+        """
+        polarity: int = 1 if towards_close else -1
+        self.synergy_joint_pos += (DELTA_POS * polarity)
+
+        self.movement(self.synergy_joint_pos)
 
 
 if __name__ == '__main__':

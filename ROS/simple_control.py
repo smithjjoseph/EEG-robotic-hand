@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """
 :file: simple_control.py
 :brief: Contains command line functions for opening and closing a qb softhand 2
