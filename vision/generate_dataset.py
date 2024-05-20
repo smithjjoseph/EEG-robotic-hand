@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""!
+"""
 :file: main.py
 :brief: Script for generation of facial emotion dataset using stable diffusion
 :detail: Based on https://github.com/computervisioneng/create-synthetic-dataset-emotion-recognition/tree/main
-:author: Joseph Smith
 :requirements:
 - Requires cuda enabled GPU
 - pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
@@ -13,7 +12,6 @@
 import os
 import random
 import torch
-import matplotlib.pyplot as plt
 from diffusers import DiffusionPipeline
 
 if not torch.cuda.is_available():
@@ -26,9 +24,9 @@ pipeline = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5",
 pipeline.to("cuda")
 
 # Create folders if they don't already exist
-os.makedirs('./img/happy', exist_ok=True)
-os.makedirs('./img/neutral', exist_ok=True)
-os.makedirs('./img/sad', exist_ok=True)
+os.makedirs('./img/HAPPY', exist_ok=True)
+os.makedirs('./img/NEUTRAL', exist_ok=True)
+os.makedirs('./img/SAD', exist_ok=True)
 
 # Create prompt choices
 NUM_OF_IMAGES = 200
@@ -56,4 +54,4 @@ for img_num in range(NUM_OF_IMAGES):
                  'blurred, watermark, grainy, signature'
 
     img = pipeline(prompt, negative_prompt=neg_prompt).images[0]
-    img.save(f"./img/{emotion}/{str(img_num).zfill(4)}.png")
+    img.save(f"./img/dataset/{emotion.upper()}/{str(img_num).zfill(4)}.png")
