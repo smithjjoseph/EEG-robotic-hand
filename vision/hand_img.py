@@ -1,7 +1,8 @@
 """
-:file: vision_img.py
-:brief: Note this implementation uses mediapipe tasks instead of the more
-        concise solutions submodule
+:file: hand_img.py
+:brief: Identifies hand landmarks from a static image using MediaPipe
+:detail: Note this implementation uses MediaPipe tasks instead of the more
+         concise solutions submodule
 :author: Joseph Smith
 """
 # https://developers.google.com/mediapipe/solutions/vision/hand_landmarker/python
