@@ -15,7 +15,7 @@ All students are required to send a weekly report via email describing,  briefly
 
 The report should be sent via email to Adar (who will respond with feedback) and copied to Jihong & [engineering-project-updates@york.ac.uk](mailto:engineering-project-updates@york.ac.uk)
 
-# 23rd February
+# 23rd February (Week 2)
 
 **Supervision Meetings:**
 
@@ -50,7 +50,7 @@ The report should be sent via email to Adar (who will respond with feedback) and
   - If allowed, does it for example have to be set to private or can it be public?
 
 
-# 1st March
+# 1st March (Week 3)
 
 **Supervision Meetings:**
 
@@ -94,7 +94,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 *Laptop was already setup with Windows. Wanted to dual-boot. Shrunk Windows partition. Disabled secure boot. Tried Ubuntu installation. Notified that storage controller needed changing (Intel RST to AHCI). Needed to make registry edits and change storage controller in BIOS. Windows expectedly BSODed. Boot files were corrupted so they had to be remade from recovery files. Tried all solutions on Ubuntu website. Tried some of my own solutions. Windows recovery partition also corrupted making it unusable without new installation media. Ended up formatting drive and just installing Ubuntu on a fresh drive.
 
-# 8th March
+# 8th March (Week 4)
 
 **Supervision Meetings:**
 
@@ -125,7 +125,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - No questions
 
-# 15th March
+# 15th March (Week 5)
 
 **Supervision Meetings:**
 
@@ -145,7 +145,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - Haven't had the chance to do as much work as I would've liked this week - I hope to get a lot more done next week
 
-# 22nd March
+# 22nd March (Week 6)
 
 **Supervision Meetings:**
 
@@ -188,7 +188,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - Do we have to send project updates over the Easter break?
 
-# 12th April
+# 12th April (Week 7)
 
 **Supervision Meetings:**
 
@@ -214,7 +214,7 @@ I have already asked Jihong the following however we decided second opinions wou
 - Go to ISA to test new movement script on softhand
 - Email Ellie to see I can arrange with her a time to show me how to use the EEG system
 
-# 19th April
+# 19th April (Week 8)
 
 **Supervision Meetings:**
 
@@ -247,7 +247,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - I've checked the demonstration day table and I've noticed Jack is not in the LIVE lab for his demonstration. Has he mentioned about doing his demonstration elsewhere?
 
-# 26th April
+# 26th April (Week 9)
 
 **Supervision Meetings:**
 
@@ -275,7 +275,7 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - I noticed Jack has managed to source a new EEG cap so I await further communications from him so I can potentially collect some data
 
-# 3rd May
+# 3rd May (Week 10)
 
 **Supervision Meetings:**
 
@@ -303,16 +303,29 @@ I have already asked Jihong the following however we decided second opinions wou
 
 - Does the university/department have a stance on using generative AI to produce a dataset for training a classification model?
 
-# 10th May
+# 10th May (Week 11)
 
 **Supervision Meetings:**
 
+- No supervision meeting with Jihong this week
+
 **Progress on Actions:**
 
-**Other Progress:**
+- Started work on my dissertation report
+- Collected data with Jack Fri 10/05
+  - After having a look at the data collected I don’t think that any real data  can be retrieved from the EEG caps due to the fact that the data export  feature is behind a paywall 
+  - I tried finding the file that the data was stored in and I believe I was  able to find it however it seems to be stored in an encrypted SQLite  database so it is not accessible to us
 
 **Objectives for Next Update:**
 
-**Comments:**
+- I plan to try and fabricate some sample data that mimics the data  collected by the EEG cap so I aim to process any data that I can  fabricate
+- Finish the dissertation report
 
 **Questions/Concerns:**
+
+- Should the only background in the final report be contained in the introduction? (or should this instead be in its own section?)
+  - Should this be a reduced version of the initial report or should it only contain new background?
+- Does the report need to contain every single piece of code completed in the appendix?
+- Is it too late to change the title of the dissertation
+  - The way I propose to write this report is to cover the 3 different methods, which I hopefully will have completed, to control the softhand ensuring to mention that the vision based methods were initially meant as  contingency for the original project
+  - Maybe a title such as 'Analysis of methods for robotic hand control'
