@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 """
-:file: vision_hand.py
-:brief: file description
-:TODO: Debouncer -> reduce resolution of changes to 2-4 percent
+:file: hand_stream.py
+:brief: Identifies hand landmarks from a video stream using MediaPipe and 
+        calculates a level of closedness for the hand
+:TODO: Reduce resolution of changes to 2-4%
 """
 
 import sys
@@ -15,7 +16,7 @@ from pathlib import Path
 if __name__ == '__main__':
     path = str(Path(__file__, '..', '..').resolve())
     sys.path.append(path)
-from ROS.incremental_control import HandControl
+from ROS.complex_control import HandControl
 
 WINDOW_NAME = 'Hand Detection'
 WEBCAM_RES = (960, 720)
