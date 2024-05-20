@@ -10,7 +10,23 @@
 
 ## `facial_stream.py`
 - Input: Webcam input
-- Output: Updating CV2 frame showing face landmarks as well as an action for whether the hand robot should be opening or closing
+- Output: Updating CV2 frame showing face landmarks as well as an action for what facial emotion is being detected
+
+---
+
+## `generate_dataset.py`
+- Uses stable diffusion to create a synthetic dataset for recognising facial emotion
+
+## `read_landmarks.py`
+- Helper module for getting face landmarks for a given image
+
+## `prepare_data.py`
+- Prepares the data from the generated dataset for reading by the train model script
+
+## `train_model.py`
+- Uses a prepared facial emotion recognition data to train a model
+
+---
 
 ## Hand Neural Network Method
 1. Image in (3x 8-bit colour channels)
