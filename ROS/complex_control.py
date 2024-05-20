@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-
 """
-:file: incremental_control.py
+:file: complex_control.py
 :brief: Contains functions for movement control of a qb softhand 2
 :author: Joseph Smith
 """
